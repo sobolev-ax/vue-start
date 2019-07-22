@@ -1,0 +1,15 @@
+.clicked {
+  animation: clicked .25s ease-in-out;
+}
+
+@keyframes clicked {
+  0% {
+    opacity: .9;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
