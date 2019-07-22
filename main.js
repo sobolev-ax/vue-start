@@ -1,21 +1,17 @@
-Vue.component('todo-item', {
-  template: '<li>Static element</li>'
-});
-
-var app = new Vue({
+new Vue({
   el: '#app',
   data: {
-    message: 'To Do',
-    todos: [
-      {title: 'Learn JS'},
-      {title: 'Learn Angular JS'},
-      {title: 'Learn React'},
-      {title: 'Learn Vue'},
-    ]
+    name: 'Sasha',
+    google: 'https://google.com',
+    link: '<a href="https://ya.ru">go to yandex....</a>'
   },
   methods: {
-    reverseMessage: function() {
-      this.message = this.message.split(' ').reverse().join(' ');
+    sayHello: function() {
+      alert('Hello ' + this.name + '!');
+    },
+    onHover: function(e) {
+      console.log(e.target);
+      e.target.style.color = 'red';
     }
   }
 });

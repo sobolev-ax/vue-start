@@ -5,21 +5,11 @@
   <title>vue-start</title>
 </head>
 <body>
-  <div id="app" v-on:click="reverseMessage">
-    {{ message }}
-    <ol>
-      <li v-for="todo in todos">
-        {{ todo.title }}
-      </li>
-    </ol>
-    <ol>
-      <todo-item></todo-item>
-      <todo-item></todo-item>
-      <todo-item></todo-item>
-      <todo-item></todo-item>
-    </ol>
+  <div id="app">
+    <h1 v-on:mouseOver="onHover" v-on:click="sayHello">Hello {{ name }}!</h1>
+    <a v-bind:href="google">go to Gooooogle....</a>
+    <span v-html="link"></span>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="./main.js"></script>
 </body>
