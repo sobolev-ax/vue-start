@@ -13,3 +13,7 @@
     opacity: 1;
   }
 }
+
+.black {
+  background: rgba(0,0,0,.9);
+}

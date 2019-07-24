@@ -1,11 +1,24 @@
 new Vue({
   el: '#app',
   data: {
+    night: false,
     counter: 0,
     increased: '',
     name: 'Sasha',
     google: 'https://google.com',
-    link: '<a href="https://ya.ru">go to yandex....</a>'
+    link: '<a href="https://ya.ru">go to yandex....</a>',
+  },
+  computed: {
+    getClasses: function() {
+      return {
+        black: this.night,
+      }
+    },
+    getStyles: function() {
+      return {
+        color: this.night ? 'white' : '',
+      }
+    },
   },
   methods: {
     increaseCounter: function(event, num) {
@@ -23,6 +36,6 @@ new Vue({
     onHover: function(e) {
       console.log(e.target);
       e.target.style.color = 'red';
-    }
-  }
+    },
+  },
 });
