@@ -1,6 +1,12 @@
 new Vue({
   el: '#app',
   data: {
+    letter: '',
+    people: [
+      'Me',
+      'You',
+      'We'
+    ],
     night: false,
     counter: 0,
     increased: '',

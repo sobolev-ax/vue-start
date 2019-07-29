@@ -26,6 +26,19 @@
       <button @mouseDown="increaseCounter($event, 10)">Увеличить на 10</button>
     </div>
 
+    <hr />
+    <h2>v-else-if</h2>
+    <input type="text" v-model="letter">
+    <div v-if="letter == 'a'">A</div>
+    <div v-else-if="letter == 'b'">B</div>
+    <div v-else-if="letter == 'c'">C</div>
+    <div v-else>not match</div>
+    <div v-show="letter == 'a'">Элемент не удаляется. display: none</div>
+    <ul>
+      <li v-for="(person, index) in people">
+        {{index}}{{person}}
+      </li>
+    </ul>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="./main.js"></script>
