@@ -16,6 +16,19 @@ Vue.component('my-counter', {
     },
 });
 
+var today = {
+    template:
+    `<h3>{{ today }}</h3>`,
+    data: function() {
+        return {
+            today: new Date(),
+        };
+    },
+}
+
 new Vue({
-    el: '#app'
+    el: '#app',
+    components: {
+        'my-today': today,
+    },
 });
