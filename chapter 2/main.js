@@ -29,6 +29,6 @@ var today = {
 new Vue({
     el: '#app',
     components: {
-        'my-today': today,
+        myToday: today,
     },
 });
