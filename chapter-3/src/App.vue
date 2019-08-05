@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-    <app-car></app-car>
+    <app-car
+      :carName="carName"
+      :carYear="carYear">
+    </app-car>
   </div>
 </template>
 
@@ -13,6 +16,8 @@ export default {
   },
   data () {
     return {
+      carName: 'Ford from parent',
+      carYear: 2019,
       msg: 'Welcome to Your Vue.js App'
     }
   }

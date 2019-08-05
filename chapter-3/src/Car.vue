@@ -7,12 +7,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      carName: 'Ford',
-      carYear: 2019,
-    };
-  },
+  props: [
+    'carName',
+    'carYear',
+  ],
 }
 </script>
 
