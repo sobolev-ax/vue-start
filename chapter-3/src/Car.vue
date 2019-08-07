@@ -7,10 +7,13 @@
 
 <script>
 export default {
-  props: [
-    'carName',
-    'carYear',
-  ],
+  props: {
+    carName: {
+      type: String,
+      default: 'Default Name'
+    },
+    carYear: Number
+  },
 }
 </script>
 
